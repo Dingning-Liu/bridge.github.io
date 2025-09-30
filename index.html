@@ -202,7 +202,7 @@
                 <span class="author-block">
                   <a href="https://github.com/ghy0324" target="_blank">Haoyu Guo</a><sup>1</sup>,</span>
                   <span class="author-block">
-                    <a href="https://github.com/zjyaccount" target="_blank">Jingyi Zhou</a><sup>1</sup>,
+                    <a href="https://github.com/zjyaccount" target="_blank">Jingyi Zhou</a><sup>1,2</sup>,
                   </span>
                   <span class="author-block">
                     <a href="https://tonghe90.github.io/" target="_blank">Tong He</a><sup>1&dagger;</sup>
@@ -263,6 +263,105 @@
   </div>
 </section>
 <!-- End Teaser Image Section -->
+
+<!-- Swiper CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<!-- Swiper CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<!-- 自定义样式 -->
+<style>
+  /* 基础样式：圆形按钮 */
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: black;                 /* 箭头颜色 */
+    width: 40px;                  /* 按钮大小 */
+    height: 40px;
+    border-radius: 50%;           /* 变成圆形 */
+    background: white;            /* 白色背景 */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2); /* 阴影效果 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* 调整箭头大小 */
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 18px;  /* 箭头图标大小 */
+    font-weight: bold;
+  }
+
+  /* 悬停时效果 */
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    background: #f0f0f0;
+  }
+</style>
+
+
+<!-- Visualization Image Section -->
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+
+        <!-- Swiper Container -->
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="static/images/vis1.png" alt="Image 1" style="max-width: 80%; height: auto;">
+            </div>
+            <div class="swiper-slide">
+              <img src="static/images/vis2.png" alt="Image 2" style="max-width: 80%; height: auto;">
+            </div>
+            <div class="swiper-slide">
+              <img src="static/images/vis3.png" alt="Image 3" style="max-width: 80%; height: auto;">
+            </div>
+            <div class="swiper-slide">
+              <img src="static/images/vis4.png" alt="Image 4" style="max-width: 80%; height: auto;">
+            </div>
+            <div class="swiper-slide">
+              <img src="static/images/vis5.png" alt="Image 5" style="max-width: 80%; height: auto;">
+            </div>
+          </div>
+
+          <!-- 翻页按钮 -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <!-- 分页圆点 -->
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Visualization Image Section -->
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.swiper', {
+    loop: true, // 无限循环
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+</script>
+
 
 <!-- Framework Section -->
 <section class="section hero is-small">
