@@ -57,7 +57,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://ajax.googleapis.com">
-  <link rel="preconnect" href="https://documentcloud.adobe.com">
+  <!-- Removed: <link rel="preconnect" href="https://documentcloud.adobe.com">-->
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
 
@@ -72,15 +72,15 @@
   <link rel="stylesheet" href="static/css/index.css">
 
   <!-- Non-critical CSS - Load asynchronously -->
-  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <!-- Removed: <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
+  <!-- Removed: <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
   <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
   <!-- Fallback for browsers that don't support preload -->
   <noscript>
-    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <!-- Removed: <link rel="stylesheet" href="static/css/bulma-carousel.min.css"> -->
+    <!-- Removed: <link rel="stylesheet" href="static/css/bulma-slider.min.css"> -->
     <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   </noscript>
@@ -90,10 +90,10 @@
 
   <!-- Defer non-critical JavaScript -->
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <!-- Removed: <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script> -->
   <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script defer src="static/js/bulma-carousel.min.js"></script>
-  <script defer src="static/js/bulma-slider.min.js"></script>
+  <!-- Removed: <script defer src="static/js/bulma-carousel.min.js"></script> -->
+  <!-- Removed: <script defer src="static/js/bulma-slider.min.js"></script> -->
   <script defer src="static/js/index.js"></script>
 
   <!-- Structured Data for Academic Papers -->
@@ -217,7 +217,7 @@
             <div class="column has-text-centered">
               <div class="publication-links">
 				  <span class="link-block">
-									<a href="https://github.com/lnbxldn/BRIDGE" target="_blank"
+									<a href="https://arxiv.org/abs/2509.25077" target="_blank"
 									   class="external-link button is-normal is-rounded is-dark">
 									  <span class="icon">
 										<i class="ai ai-arxiv"></i>
@@ -310,11 +310,14 @@
           <span class="copy-text">Copy</span>
         </button>
       </div>
-      <pre id="bibtex-code"><code>@misc{BRIDGE2025,
+      <pre id="bibtex-code"><code>@misc{liu2025BRIDGE,
   title={BRIDGE - Building Reinforcement-Learning Depth-to-Image Data Generation Engine for Monocular Depth Estimation},
   author={Liu, Dingning and Guo, Haoyu and Zhou, Jingyi and He, Tong},
   year={2025},
-  url={https://dingning-liu.github.io/bridge.github.io/}
+  eprint={2509.25077},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  url={https://arxiv.org/abs/2509.25077},
 }</code></pre>
     </div>
 </section>
@@ -336,12 +339,6 @@
     </div>
   </div>
 </footer>
-
-<!-- Statcounter tracking code -->
-
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
 
   </body>
   </html>
